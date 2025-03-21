@@ -89,7 +89,7 @@ margin: auto;
 }
 
 #projects .project-tile {
-height: 450px;
+height: 500px;
 width: 100%;
 display: flex;
 flex-direction: column;
@@ -102,8 +102,8 @@ box-shadow: 8px 10px 8px 10px rgba(125, 135, 132, 0.2);
 }
 
 #projects .project-tile img {
-height: 80%;
-width: 70%;
+height: 100%;
+width: 100%;
 object-fit: cover;
 }
 
@@ -190,6 +190,6 @@ font-size: 45px;
 
 #projects .project-tile {
 height: 600px;
-width: 90%;
+width: 100%;
 }
 }
