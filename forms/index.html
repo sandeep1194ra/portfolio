@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>General Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>General Survey Form</h1>
+    <p>Thank you for participating. This is a general survey about individuals</p>
+    <form method="post" action="">
+      <fieldset>
+<legend>Personal Details</legend>
+        <label for="full-name" id="name-label">Enter Your Full Name: <input id="name" name="full-name" type="text" placeholder="John Cena" required></label>
+<div>Gender: 
+<label for="male" class="inline-label"><input type="radio" name="gender" value="male" id="male" class="inline" checked>Male</label>
+<label for="female" class="inline-label"><input type="radio" name="gender" value="female" id="female" class="inline">Female</label>
+</div>
+<label for="age">Enter Your Age(in Years)<input type="number" name="age" min="13" max="120" value="age" id="age" placeholder="25" required></label>
+<label for="city">Enter Name of Your City<input type="text" name="city" id="city" placeholder="Tokyo" required></label>
+</fieldset>
+<fieldset>
+<legend>Communication Details</legend>
+<label for="email">Enter Your Email ID: <input type="email" name="email" id="email" placeholder="abc@email.com" required></label>
+<label for="phone">Enter Your Mobile Number: <input type="number" id="phone" pattern="(0-9){5} (0-9){5}" placeholder="98765 43210" required></label>
+<label for="twitter">Twitter: <input type="text" name="twitter" id="twitter"></label>
+<label for="facebook">Facebook: <input type="text" name="facebook" id="facebook"></label>
+</fieldset>
+<fieldset>
+<legend>Ownership Details</legend>
+<label for="house">How many Homes do you Own?
+<select>
+<option value="""">(Select any One)</option>
+<option value="0">None</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">More Than 2</option>
+</select>
+</label>
+
+<label for="vehicle">How many Vehicles do you Own?
+<select>
+<option value="""">(Select any One)</option>
+<option value="0">None</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">More Than 2</option>
+</select>
+</label>
+
+<p>What all below things do you Own(tick all applicable)?</p>
+<label for="bank-account"><input type="checkbox" id="bank-account" name="things" class="inline">Bank Account</label>
+<label for="gold"><input type="checkbox" id="gold" name="things" class="inline">Gold</label>
+<label for="ac"><input type="checkbox" id="ac" name="things" class="inline">ACs</label>
+<label for="refrigerator"><input type="checkbox" id="refrigerator" name="things" class="inline">Refrigerator</label>
+<label for="laptop"><input type="checkbox" id="laptop" name="things" class="inline">Computer/Laptop</label>
+</fieldset>
+
+<legend>Want to give Feedback about this Survey</legend>
+<textarea type="text" id="feedback" rows="5" cols="30" placeholder="Start typing ..."></textarea>
+<!-- <button type="reset" id="reset">Reset</button> -->
+<button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
