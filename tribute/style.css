@@ -57,6 +57,24 @@
     margin: 1rem;
  }
 
+ figure {
+    height: 100%;
+    width: 70%;
+    object-fit: cover;
+ }
+
+ img {
+    height: 100%;
+    width: 100%
+    object-fit: cover;
+ }
+
+ figcaption {
+    font-style: italic;
+    text-align: center;
+    text-decoration: underline;
+ }
+
  .left {
     float: left;
     margin-right: 1.5rem;
@@ -111,13 +129,25 @@ ul {
    list-style-type: square;
 }
 
-figcaption {
-    font-style: italic;
-    text-align: center;
-    text-decoration: underline;
-}
-
 footer {
     text-align: center;
     font-size: larger;
+}
+
+@media (max-width < 700px) {
+figure {
+    height: 80%;
+    width: 75%;
+    object-fit: cover;
+}
+    
+table, th, tr, td, caption {
+    border: solid 2px green;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-collapse: collapse;
+    padding: 4px;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 0.75rem;
+}
 }
