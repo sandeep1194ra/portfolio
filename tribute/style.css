@@ -5,7 +5,7 @@
  }
 
  body {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     /* background-color: #8df0c7ab; */
     background-image: linear-gradient( to left, green, blue, purple, tomato, brown);
@@ -15,25 +15,26 @@
     background-color: #F7F6C5;
     border: ridge 10px #f5f26590;
     text-align: center;
-    margin: 0 auto 1rem;
-    padding: 1rem 0 1rem 0;
+    margin-bottom: 15px;
+    padding: 15px 0;
  }
 
  ul {
     list-style-type: none;
-    padding: 0.5rem;
+    padding: 10px;
     text-align: left;
  }
 
  .pri-navigation li {
-    display: inline-block;
-    margin-inline: 5%;
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
  }
 
  .pri-navigation li a,
  .pri-navigation li a:visited {
     text-decoration: none;
-    color: darkblue;
+    color: black;
  }
 
  .pri-navigation li a:hover,
@@ -41,20 +42,20 @@
     text-decoration: underline;
     background-color: gold;
     cursor: pointer;
-    color: steelblue;
+    color: #242424;
  }
 
  h1 {
     /* background-color: #8D9EC6; */
     text-align: center;
     border: ridge 10px wheat;
-    margin-bottom: 3rem;
-    font-size: 3em;
+    margin-bottom: 40px;
+    font-size: 40px;
  }
 
  main {
     color: white;
-    margin: 1rem;
+    margin: 15px;
  }
 
  figure {
@@ -77,7 +78,7 @@
 
  .left {
     float: left;
-    margin-right: 1.5rem;
+    margin-right: 25px;
     border: solid 5px whitesmoke;
     padding-bottom: 5px;
  }
@@ -96,14 +97,14 @@
  h2 {
     text-decoration: underline;
     color: wheat;
-    padding: 0 1rem 1rem 1rem;
+    padding: 0 15px 15px 15px;
 }
 
  table, th, tr, td, caption {
     border: solid 4px green;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-collapse: collapse;
-    padding: 0.5rem;
+    padding: 5px;
     text-align: center;
     margin-top: 5px;
 }
@@ -121,11 +122,11 @@ a:hover, a:focus {
 }
 
 p {
-   margin: 1rem;
+   margin: 15px;
 }
 
 ul {
-   margin-left: 2rem;
+   margin-left: 30px;
    list-style-type: square;
 }
 
@@ -135,10 +136,23 @@ footer {
 }
 
 @media (max-width < 700px) {
+body {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+
 figure {
     height: 80%;
     width: 75%;
     object-fit: cover;
+}
+
+figcaption {
+    font-size: 15px;
 }
     
 table, th, tr, td, caption {
