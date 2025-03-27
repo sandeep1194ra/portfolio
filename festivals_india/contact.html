@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sandeep Avadutha">
+    <meta name="description" content="This webpage is about contact us.">
+    <title>Contact Us</title>
+    <link rel="icon" href="fav_icon.jpg">
+    <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+    <header class="me-header">
+        <nav class="me-navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="festivals.html">Festivals</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>        
+                </ul>
+            </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Contact Me</h1>
+        <p>Please fill below form to contact me or give suggestions, feedbacks or complaints and I will work on it to improve the webpage.</p>
+        </section>
+
+        <article>
+            <h2>Complaints/Feedback/Suggestion Box</h2>
+            <p>You can share your inputs by filling details below. Your thoughts will make me host/manage this website in a better way. Any kind however small it may be is appreciated.</p>
+
+         <div class="form-container">
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <p><label for="firstname">First Name:</label>
+                        <input type="text" name="firstname" id="firstname" placeholder="ABC" autocomplete="on" required></p>
+                    <p><label for="lastname">Last Name:</label>
+                        <input type="text" name="lastname" id="lastname" placeholder="XYZ" autocomplete="on" required></p>
+                    <p><label for="contact">Mobile Number:</label>
+                        <input type="number" name="contact" id="contact" placeholder="9876543210" autocomplete="on" required></p>
+                    <p><label for="email">Email id:</label>
+                        <input type="email" name="email" id="email" placeholder="random@email.com" autocomplete="on" required></p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Complaints/Feedback/Suggestion Box</legend>
+                    <label for="feedback">Your Message</label><br>
+                    <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="Type your message here."></textarea>
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+            </form>
+         </div>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>&lt;  &lt;  &lt;  &copy;  Sandeep  &gt;  &gt;  &gt;</p>
+    </footer>
+    
+</body>
+
+</html>

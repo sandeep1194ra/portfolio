@@ -1,0 +1,261 @@
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+    font-size: 1.2rem;
+    background-color: #FFF5B2;
+    border: double, 0.75rem, gold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 1rem;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, green, yellow, steelblue, red);
+}
+
+.me-header {
+    width: 100%;
+    background-color: aquamarine;
+    border-bottom: 5px solid aqua;
+}
+
+.me-navbar ul {
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.me-navbar li {
+   list-style-type: none;
+   padding: 10px 0;
+   font-weight: bold;
+}
+
+a, li a {
+color: black;
+}
+
+li a:visited {
+color: #333;
+}
+
+.me-navbar li a, .me-navbar li a:visited {
+    text-decoration: none;
+}
+
+li a:hover, li a:focus {
+    text-decoration: underline;
+    color: #333;
+}
+
+main {
+    background-color: rgba(93, 234, 234, 0.61);
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+img {
+    display: block;
+}
+
+.mepro {
+    background-image: url('img/explorer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.me {
+    border-bottom: 2px solid #000;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+.meImg {
+width: 35%;
+}
+
+.meImg img {
+    width: 100%;
+    height: auto;
+    min-width: 100px;
+    object-fit: cover;
+    border: 5px solid gold;
+    border-radius: 50%;
+    background-color: aqua;
+}
+
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
+h1 {
+    background-color: gold;
+    text-align: center;
+    color: blue;
+    border: 4px outset red;
+    padding: 10px;
+}
+
+.h1 {
+    font-size: 500%;
+    color: blue;
+    border: none;
+    text-decoration: underline;
+    text-shadow: 2px 4px 6px black;
+    opacity: 0.85;
+}
+
+h1:hover {
+    background-color: rgba(93, 234, 234, 0.61);
+}
+
+h2 {
+    background-color: gold;
+    color: red;
+    border: 4px inset blue;
+    padding: 10px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+p {
+    font-style: oblique;
+    color: blue;
+    background-color: #f5e78e;
+    padding: 5px auto;
+    line-height: 1.5;
+    margin: 10px auto;
+}
+
+ form-container {
+    width: 500px;
+    margin: 0 auto;
+ }
+
+form {
+    margin: 10px auto;
+    text-align: left;
+    border: 10px ridge aqua;
+}
+
+form p {
+    font-weight: 800;
+}
+
+fieldset {
+  border: none;
+  border-bottom: 3px solid black;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+legend {
+text-align: center;
+margin: 10px 0;
+font-weight: 600;
+}
+
+label[for="feedback"] {
+font-weight: 800;
+}
+
+.margin li {
+   margin-left: 2rem;
+   list-style-type: square;
+   padding: 5px 0;
+   font-weight: 600;
+}
+
+li:last-of-type {
+   padding-bottom: 20px;
+}
+
+button[type="submit"], button[type="reset"] {
+  width: 100px;
+  margin: 15px auto;
+  height: 30px;
+  font-weight: 600;
+  background-color: gold;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+color: black;
+text-align: center;
+background-color: aquamarine;
+}
+
+@media only screen and (max-width: 700px) {
+body {
+font-size: 0.8rem;
+}
+ 
+ .me-header {
+    border-bottom: 2px solid aqua;
+}
+
+.me-navbar li {
+   padding: 5px 0;
+   font-size: 8px;
+}
+
+main {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.me {
+    border-bottom: 1px solid #000;
+    padding: 10px;
+}
+
+.meImg {
+width: 15%;
+}
+
+.meImg img {
+    border: 2px solid gold;
+}
+
+h1 {
+    border: 2px outset red;
+}
+
+.h1 {
+    font-size: 300%;
+}
+
+h2 {
+    border: 2px inset blue;
+    margin: 10px 0;
+}
+
+ form-container {
+    width: 350px;
+ }
+
+ form {
+    margin: 5px auto;
+    border: 4px ridge aqua;
+ }
+
+button[type="submit"], button[type="reset"] {
+  width: 80px;
+  margin: 10px auto;
+}
+
+p {
+    font-style: oblique;
+    margin: 5px auto;
+}
+  }
